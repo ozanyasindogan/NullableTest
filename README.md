@@ -1,6 +1,6 @@
 # NullableTest
 
-Strange behaviour when I try to enumarate type info's from an assembly and check if the type is nullable. Every other type then String returns correctly but String always returns non-nullable no matter how I mark it.
+Strange behavior when I try to enumerate type info's from an assembly and check if the type is nullable. Every other type then String returns correctly but String always returns non-nullable no matter how I mark it.
 
 I encountered this issue when I was trying to convert my Entity Framework generated models (database first) to protocol buffers with a self made code-gen tool. I wanted to use google.protobuf.StringValue wrapper instead of just string but couldn't find a way to read the string? type properly. It always returns System.String.
 
